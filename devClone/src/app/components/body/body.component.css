@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans&family=Nunito:wght@500&family=Poppins:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+section {
+    height: 90vh;
+    background-image: url(../../../assets/images/Home_Animation_Gradient_01.gif);
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); */
+    /* Blurry border using box-shadow */
+    box-shadow: 10px 10px 30px #ff4da66c , -10px -10px 30px #14b14996;
+    border-radius: 4px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    /* color: transparent; */
+    /* opacity: 0; */
+
+
+    font-size: xx-large;
+    image-orientation: flip;
+}
+
+.heading h1 {
+    font-family: 'Abril Fatface';
+    -webkit-text-stroke: 1px white;
+    /* For webkit-based browsers */
+    color: transparent;
+    padding-top: 15%;
+
+
+}

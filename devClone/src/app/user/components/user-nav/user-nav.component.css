@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Nunito:wght@500&family=Poppins:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(229, 227, 227, 0.082);
+    padding: 2px;
+
+}
+
+.logo {
+
+    height: auto;
+    width: 50px;
+}
+
+.logo img {
+    box-shadow: 5px 10px black;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 4rem auto;
+
+}
+
+
+.right {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-right: 2%;
+}
+
+.right button {
+    margin: 5px;
+    text-decoration: none;
+
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px #b4b4b4 solid;
+    padding-top: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 2px;
+    margin: 2px;
+}
+
+.search button:hover {
+    border: none;
+    outline: none;
+    background: rgba(125, 125, 125, 0.13);
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+
+#login {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(225, 219, 219, 0.697);
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+#createPost {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    background-color: white;
+    border: 1.5px solid blue;
+    font-size: medium;
+    border-radius: 10px;
+    color: blue;
+    transition: 0.5s;
+}
+
+#createPost:hover {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    background-color: blue;
+    border: 1.5px solid white;
+    font-size: medium;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+
+#search {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#profile_picture {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+#search-icon {
+    width: 28px;
+    align-items: center;
+}
+
+#profile-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}

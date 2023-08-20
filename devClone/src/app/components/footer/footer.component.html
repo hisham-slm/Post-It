@@ -1,0 +1,21 @@
+<div class="footer">
+    <div class="heading">
+        <h5>Dev: Uniting aspiring developers for a brighter future, fostering community collaboration.</h5>
+    </div>
+    <div class="mail">
+        <tr>
+            <td>
+                <h5>Subscribe to our news letters</h5>
+            </td>
+            <td class="form">
+                <form #emailForm="ngForm" (ngSubmit)="submit(emailForm.value)">
+                    <input type="text" placeholder="Enter Your Mail ID Here" name="emailId" ngModel>
+                    <button type="submit">Add Me</button>
+                </form>
+            </td>
+            <td>
+                <h3 id="emailerror"></h3>
+            </td>
+        </tr>
+    </div>
+</div>

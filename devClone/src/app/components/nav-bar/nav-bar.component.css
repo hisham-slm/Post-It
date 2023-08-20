@@ -1,0 +1,92 @@
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Nunito:wght@500&family=Poppins:wght@300;500&display=swap');
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ .nav {
+     display: flex;
+     justify-content: space-between;
+     background-color: rgba(229, 227, 227, 0.082);
+     padding: 2px;
+
+ }
+
+ .logo {
+
+     height: auto;
+     width: 50px;
+ }
+
+ .logo img {
+     box-shadow: 5px 10px black;
+ }
+
+ .name {
+     font-family: 'Poppins', sans-serif;
+     padding-left: 20px;
+ }
+
+ .left{
+    display: flex;
+    flex-direction: row;
+
+ }
+
+
+ .right {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .right button {
+     margin: 5px;
+     text-decoration: none;
+ }
+
+ #login {
+     font-family: 'Poppins', sans-serif;
+     background-color: rgba(225, 219, 219, 0.697);
+     border: none;
+     padding: 8px;
+     border-radius: 10px;
+     font-size: medium;
+ }
+
+ #create_account {
+     font-family: 'Poppins', sans-serif;
+     padding: 5px;
+     background-color: white;
+     border: 1.5px solid blue;
+     font-size: medium;
+     border-radius: 10px;
+     color: blue;
+     transition: 0.5s;
+ }
+
+ #create_account:hover {
+     font-family: 'Poppins', sans-serif;
+     padding: 5px;
+     background-color: blue;
+     border: 1.5px solid white;
+     font-size: medium;
+     border-radius: 10px;
+     color: white;
+     transition: .5s;
+ }
+
+ #search {
+     display: inline-block;
+     border: 1px solid #ccc;
+     padding: 8px 12px;
+     font-size: 16px;
+     color: #333;
+     background-color: #fff;
+     border-radius: 4px;
+     transition: border-color 0.3s ease-in-out;
+     margin-left: 10px;
+     margin-top: 2px;
+     width: 70%;
+ }

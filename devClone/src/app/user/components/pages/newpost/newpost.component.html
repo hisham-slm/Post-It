@@ -1,0 +1,36 @@
+<app-user-nav></app-user-nav>
+<div class="page">
+    <div class="card">
+        <div class="header">
+            <h2>Create New Post</h2>
+        </div>
+
+
+
+        <form #postForm="ngForm" (ngSubmit)="submit(postForm.value)">
+            <div class="contents">
+                <div class="left">
+                    
+                    <div id="filePreview">
+                    </div>
+                    <button id="upload-button"> Upload File
+                        <input name="media" ngModel="" id="input" type="file" (change)="handleFileInput($event)">
+                    </button>   
+                    <h5 id="error"></h5>
+                </div>
+                <div class="right">
+                    <div>
+                        <input id="username" type="text" hidden>
+                        <textarea [(ngModel)]="caption" name="caption" class="caption-textarea" cols="10" rows="10" placeholder="Add Caption Here" accept="image/*"
+                            placeholder="Add Caption Here"></textarea>
+                    </div>
+
+                    <button type="submit" id="share">Share</button>
+                </div>
+            </div>
+        </form>
+
+
+
+    </div>
+</div>

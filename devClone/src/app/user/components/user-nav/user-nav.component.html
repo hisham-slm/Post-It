@@ -1,0 +1,27 @@
+<div class="nav">
+    <div class="left">
+        <a routerLink="">
+            <img class="logo" src="assets/images/logo.png" alt="">
+        </a>
+        <div class="search">
+            <input [(ngModel)]="searchKey" id="searchKey" type="text" placeholder="Search Here">
+            <button (click)="search()">
+              <img id="search-icon" src="assets/images/search-icon.svg" alt="search icon">
+            </button>
+          </div>
+
+    </div>
+
+    <div class="right">
+        <a routerLink="/user/new"><button id="createPost">Create Post</button></a>
+        <button mat-icon-button [matMenuTriggerFor]="menu" id="profile-button">
+            <img id="profile_picture" src="http://127.0.0.1:8000/media/{{data.image}}" alt="profile picture">
+        </button>
+        <mat-menu  #menu="matMenu">
+            <a mat-menu-item (click)="goToCreatePost()">Create Post</a>
+            <a routerLink="/user/profile" mat-menu-item>Profile</a>
+            <a mat-menu-item (click)="logout()">Log Out</a>
+
+        </mat-menu>
+    </div>
+</div>

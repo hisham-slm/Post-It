@@ -1,0 +1,38 @@
+<app-nav-bar></app-nav-bar>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+<section>
+    <div class="wrapper">
+        <div class="content">
+            <div data-lag="1" class="card">
+                <div class="heading">
+                    <h1 data-speed="1.5" id="login">Log In</h1>
+                </div>
+                <form #loginForm = "ngForm" (ngSubmit)="submit(loginForm.value)" class="">
+                    <div class="forms">
+                        <input name="username" ngModel type="text" placeholder="Enter Your User Name">
+                        <input name="password" ngModel type="password" placeholder="Enter Your Password Here">
+                        <button id="button" type="submit">Log In</button>
+    
+                    </div>
+                </form>
+                
+                <a id="forgot" href="">Forgot Password?</a>
+                <div *ngIf="sCode != 201">
+                    <h3 disable id="error"> {{ msg }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+    ScrollSmoother.create({
+        wrapper: '.wrapper',
+        content: '.content',
+        smooth: 1.5,
+        effects: true
+    })
+</script>
+<app-footer></app-footer>

@@ -1,0 +1,31 @@
+<div class="post">
+    <div class="post-header">
+        <img src="http://127.0.0.1:8000{{imageURL.imageData.profilePicture}}" alt="User Avatar">
+        <h3>{{imageURL.imageData.username}}</h3>
+    </div>
+    <br>
+    <div class="post-image">
+        <img src="http://127.0.0.1:8000{{imageURL.imageData.media}}" alt="Post Image">
+    </div>
+    <div class="post-details">
+        <div class="likes">
+            <span class="likes-count">{{imageURL.imageData.likes}}</span> likes
+        </div>
+        <div class="caption">
+            <p>{{imageURL.imageData.caption}}</p>
+        </div>
+        <div class="post-date">
+            <span class="date">{{imageURL.imageData.date}}</span>
+        </div>
+        <button class="button" (click)="deletePost(imageURL.imageData.id)">Delete Post</button>
+    </div>
+        <div class="comments">
+            <h4>Comments</h4>
+            <ul>
+            <li>Comment 1</li>
+            </ul>
+        </div>
+        <div class="add-comment">
+            <input id="comment" type="text" placeholder="Add a comment">
+            <button (click)="addComment()">Add</button>
+</div>

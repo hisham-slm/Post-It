@@ -1,0 +1,42 @@
+<app-user-nav></app-user-nav>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<div class="page">
+
+    <div *ngFor="let post of posts" class="post-card" id="post-card">
+        <div class="image">
+            <img src="http://127.0.0.1:8000{{post.media}}">
+        </div>
+        <div class="profile">
+            <table>
+                <tr>
+                    <td>
+                        <a (click)="sendUsername(post.username)" routerLink="/user/{{post.username}}"><img id="profile_picture" src="http://127.0.0.1:8000{{post.profilePicture}}" alt="Posted Image"></a>
+                    </td>
+                    <td>
+                        <a class="profileName" (click)="sendUsername(post.username)" routerLink="/user/{{post.username}}"><h3 id="profile-name">{{post.username}}</h3></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="post-date">{{post.uploaded_date}}</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="postHeading">
+            <h1>{{post.caption}}</h1>
+        </div>
+        <div class="reactions">
+            <button class="like-button" id="likeButton_{{ post.id }}" (click)="tapLike(post.id)">Like</button>
+            <H5>Liked By {{post.post_likes}} Poeple</H5>
+        </div>
+
+    </div>
+    <script>
+    </script>
+
+
+
+</div>

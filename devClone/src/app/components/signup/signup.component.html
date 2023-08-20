@@ -1,0 +1,30 @@
+<section>
+    <div class="wrapper">
+        <div class="content">
+            <div data-lag="1" class="card">
+                <div class="heading">
+                    <h1 data-speed="1.5" id="login">Sign Up</h1>
+                </div>
+                <div>
+                    <form #signUpForm="ngForm" (ngSubmit)="submit(signUpForm)" id="form" class="forms">
+                        <input  id="username" type="text" placeholder="Enter Your User Name" name="username" ngModel>
+                        <input type="text" placeholder="Enter Email Here" name="email" ngModel required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                        <div *ngIf="signUpForm.controls['email'].hasError('pattern')">
+                            <div id="emailError">Invalid Email format.</div>
+                          </div>
+                          
+                        <input type="password" placeholder="Enter Your Password Here" id="password" name="password" ngModel>
+                        <input type="password" placeholder="Confirm the password" id="confirmPassword" name="confirmPassword" ngModel>
+                      
+                        <button id="button" type="submit">Sign Up</button>
+                      </form>
+                      
+
+
+                </div>
+                <h3 id="error"></h3>
+
+            </div>
+        </div>
+    </div>
+</section>

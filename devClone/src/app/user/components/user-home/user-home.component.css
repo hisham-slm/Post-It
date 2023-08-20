@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Nunito:wght@500&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.post-card {
+    width: 60%;
+    border: 1px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(212, 210, 210);
+}
+
+.post-card img {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile {
+    padding-right: 10px;
+    width: 25%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px;
+}
+
+#profile_picture {
+    /* position: absolute; */
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+}
+
+#profile-name {
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.profileName{
+    text-decoration: none;
+}
+
+#post-date {
+    font-family: 'Nunito', sans-serif;
+    font-size: small;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.postHeading {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.reactions {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    font-family: 'Work Sans', sans-serif;
+
+
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    
+    &.is-active {
+      transition-duration: 1s;
+      background-position: -2800px 0;
+    }
+  }
+  
+  
+  .placement {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .like-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* Add any other styles as needed */
+  }

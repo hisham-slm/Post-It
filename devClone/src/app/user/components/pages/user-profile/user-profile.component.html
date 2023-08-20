@@ -1,0 +1,29 @@
+<div class="body">
+    <div class="profile-body">
+        <div class="left">
+            <img id="profile-picture" src="http://127.0.0.1:8000{{details.profilePicture}}" alt="Profile Picture">
+        </div>
+        <div class="right">
+            <div class="name">
+                <h2>{{details.username}}</h2>
+                <button (click)="follow()" class="button">Follow</button>
+            </div>
+            <div class="follow-details">
+                {{numberOfPosts}} Posts {{details.followers}} Followers {{details.following}} Following
+            </div>
+            <div class="details">
+                {{details.bio}}
+            </div>
+
+        </div>
+    </div>
+    <hr style="width: 90%;">
+
+    <div class="posts">
+        <div class="grid-container">
+                <div *ngFor="let media of media" class="image">
+                    <a (click)="openModal(media)"><img id="grid-item" src="http://127.0.0.1:8000/{{media.media}}" alt=""></a>
+                </div>
+          </div>
+    </div>
+</div>

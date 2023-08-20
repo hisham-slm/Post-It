@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans&family=Noto+Sans:wght@100&family=Nunito:wght@500&family=Poppins:wght@300;500&display=swap');
+
+section {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 25vh; */
+    height: 90vh;
+}
+
+.card {
+    background-image: url(../../../assets/images/Home_Animation_Gradient_01.gif);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 30px #ff4da66c , -10px -10px 30px #14b14996;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    height: 50vh;
+    margin: 90px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#login {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    color: White;
+    font-weight: bolder;
+
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.forms input,
+button {
+    margin: 10px;
+
+}
+
+.forms input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+    height: 10px;
+}
+
+.forms input:focus {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: blue;
+    transition: border-color 0.3s ease-in-out;
+    height: 10px;
+}
+
+#button {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+#button:hover {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    background-color: white;
+    border: 1.5px solid white;
+    font-size: medium;
+    border-radius: 10px;
+    color: blue;
+    transition: .5s;
+}
+
+#forgot {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 5px;
+
+}
+
+#forgot:hover {
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+    font-size: medium;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 5px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#error{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+#emailError{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}

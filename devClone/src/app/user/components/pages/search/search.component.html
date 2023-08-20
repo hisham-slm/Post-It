@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Search Results</title>
+
+</head>
+
+<body>
+  <h1 id="header" class="heading">Profile Search Results</h1>
+
+  <a (click)="sendUsername(result.username)" routerLink="/user/{{result.username}}" *ngFor="let result of results"
+    href="">
+    <div class="profile">
+      <img src="http://127.0.0.1:8000/media/{{result.profilePicture}}" alt="Profile Picture">
+      <h4 class="username">{{result.username}}</h4>
+    </div>
+  </a>
+</body>
+
+</html>
