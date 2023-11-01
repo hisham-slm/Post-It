@@ -110,7 +110,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dev_clone',
         'USER': 'postgres',
-        'PASSWORD' : 'blahcoat',
+        'PASSWORD' : '',
+        #password has been removed for safety purposes--------------------------------------
         'HOST': 'localhost',
         'PORT':'5432'
     }
