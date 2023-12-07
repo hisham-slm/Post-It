@@ -36,7 +36,7 @@
 <ol>
     <li>
         <strong>Clone the repository</strong>:
-        <pre><code>git clone https://github.com/your-username/post-it.git</code></pre>
+        <pre><code>git clone https://github.com/hisham-slm/post-it.git</code></pre>
     </li>
     <!-- Steps for Backend Setup -->
     <li>
